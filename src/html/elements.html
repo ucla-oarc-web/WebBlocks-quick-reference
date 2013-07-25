@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebBlocks Reference: Elements</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/blocks.css">
+        <script type="text/javascript" src="js/blocks.js"></script>
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" href="css/blocks-ie.css">
+        <script type="text/javascript" src="js/blocks-ie.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1 class="text-center">WebBlocks Reference</h1>
+            <p class="text-neutral text-center" style="font-size:1.4em;font-weight:bold"><a href="http://ucla.github.io/WebBlocks" target="_blank" style="text-decoration:none">ucla.github.io/WebBlocks</a></p>
+            
+            <h2 class="text-center">Base Elements</h2>
+            <p class="text-neutral text-center"><em>Foundational elements</em></p>
+            
+            <div class="row">
+                
+                <div class="panel-4">
+                    
+                    <h3>Container</h3>
+                    <p>Container with maximum width and minimum gutter</p>
+                    <pre class="prettyprint">&lt;div class="container"&gt;&lt;!-- content --&gt;&lt;/div&gt;</pre>
+                    
+                    <h3>Row</h3>
+                    <p>X/12 proportional above collapse; full width below</p>
+                    <pre class="prettyprint">&lt;div class="row"&gt;
+    &lt;div class="panel-4"&gt;&lt;!-- 1/3 --&gt;&lt;/div&gt;
+    &lt;div class="panel-8"&gt;&lt;!-- 2/3 --&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                    
+                    <h3>Right-oriented Row</h3>
+                    <p>Right-to-left orientation above collapse; DOM order below</p>
+                    <pre class="prettyprint">&lt;div class="row right"&gt;
+    &lt;div class="panel-4"&gt;&lt;!-- right --&gt;&lt;/div&gt;
+    &lt;div class="panel-8"&gt;&lt;!-- left --&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                    
+                    <h3>Visibility</h3>
+                    <p>To completely hide content</p>
+                    <pre class="prettyprint">&lt;div class="hide"&gt;</pre>
+                    <p>To hide content except for screen readers</p>
+                    <pre class="prettyprint">&lt;div class="hide-accessible"&gt;</pre>
+                    <p>To hide content except if no media query support</p>
+                    <pre class="prettyprint">&lt;div class="hide-media-query"&gt;</pre>
+                    
+                    <h3>Block Float</h3>
+                    <p>For <code>X</code> as <code>left</code> or <code>right</code>, use <code>float-X</code></em></p>
+                    <pre class="prettyprint">&lt;div class="float-right"&gt;</pre>
+                    
+                    <h3>Text Alignment</h3>
+                    <p>For <code>X</code> as <code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code>, use <code>text-X</code></em></p>
+                    <pre class="prettyprint">&lt;div class="text-right"&gt;</pre>
+                    
+                </div>
+                
+                <div class="panel-4">
+                    
+                    <h3>Responsive Breakpoints</h3>
+                    
+                    <p>
+                        <code>xxsmall</code> - 360px
+                        <br><code>xsmall</code> - 480px
+                        <br><code>small</code> - 640px
+                        <br><code>medium-small</code> - 768px
+                        <br><code>medium</code> - 960px
+                        <br><code>medium-large</code> - 1024px
+                        <br><code>large</code> - 1280px
+                    </p>
+                    
+                    <h3>Responsive Row Collapse</h3>
+                    <p>For <code>X</code> breakpoint, use <code>X-collapse</code> to set collapse size</p>
+                    <pre class="prettyprint">&lt;div class="row medium-collapse"&gt;</pre>
+                    <p>Use <code>no-collapse</code> if should never collapse</p>
+                    
+                    <h3>Responsive Visibility</h3>
+                    <p>For <code>X</code> breakpoint, use <code>hide-X</code> to hide below <code>X</code></p>
+                    <pre class="prettyprint">&lt;div class="hide-medium"&gt;</pre>
+                    <p>For <code>X</code> breakpoint, use <code>hide-above-X</code> to hide above <code>X</code></p>
+                    <pre class="prettyprint">&lt;div class="hide-above-medium"&gt;</pre>
+                    
+                    <h3>Responsive Block Float</h3>
+                    <p><em>For <code>X</code> breakpoint, <code>Y</code> as <code>left</code> or <code>right</code>...</em></p>
+                    <p>Use <code>float-Y-X</code> to float <code>Y</code> below <code>X</code></p>
+                    <pre class="prettyprint">&lt;div class="float-right-medium"&gt;</pre>
+                    <p>Use <code>float-Y-above-X</code> to float <code>Y</code> above <code>X</code></p>
+                    <pre class="prettyprint">&lt;div class="float-right-above-medium"&gt;</pre>
+                    
+                    <h3>Responsive Text Alignment</h3>
+                    <p><em>For <code>X</code> breakpoint, <code>Y</code> as <code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code>...</em></p>
+                    <p>Use <code>text-Y-X</code> to align text to <code>Y</code> below <code>X</code></p>
+                    <pre class="prettyprint">&lt;div class="text-center-medium"&gt;</pre>
+                    <p>Use <code>text-Y-above-X</code> to align text to <code>Y</code> above <code>X</code></p>
+                    <pre class="prettyprint">&lt;div class="text-right-above-medium"&gt;</pre>
+                    
+                    
+                    
+                </div>
+                
+                <div class="panel-4">
+                    
+                    <h3>Colors</h3>
+                    
+                    <p>Colors can be applied on any element, and some contexts have special behaviors.</p>
+                    
+                    <h4>Classes</h4>
+                    <p><code class="text-primary">primary</code>, <code class="text-secondary">secondary</code>, <code class="text-tertiary">tertiary</code>, <code class="text-neutral">neutral</code>, <code class="text-default">default</code>, <code class="text-success">success</code>, <code class="text-warning">warning</code>, <code class="text-error">error</code>, <code class="text-danger">danger</code>, <code class="text-important">important</code>, <code class="text-highlight">highlight</code>, <code class="text-info">info</code>, <code class="text-inverse">inverse</code></p>
+                    
+                    <h4>Modifiers</h4>
+                    <p>Modifiers can be applied to any color to create variation:</p>
+                    <p><code>gradient</code> - gradient variant of base color
+                        <br><code>dark</code> - dark variant of base color
+                        <br><code>light</code> - light variant of base color
+                        <br><code>fade</code> - dark if body background dark, light otherwise
+                        <br><code>emphasize</code> - light if body background dark, dark otherwise</p>
+                    <p>Any brightness modifier may be used with <code>gradient</code></p>
+                    
+                    <h4>Special Behaviors</h4>
+                    <p><code>.button</code> implicitly has gradient
+                        <br><code>.message</code> implicitly has fade
+                        <br><code>.control</code> colors label, input border, help text</p>
+                    
+                    <h4>Text Classes</h4>
+                    <p>The <code>text-</code> classes provide only text color, and they do not have support for modifiers.</p>
+                    <pre class="prettyprint">&lt;span class="text-primary"&gt;&lt;!-- primary --&gt;&lt;/span&gt;</pre>
+                    
+                    <h3>Constrained Content</h3>
+                    <p>Use <code>constrained</code> to avoid overflowing containing element</p>
+                    <pre class="prettyprint">&lt;img class="constrained"&gt;</pre>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <script type="text/javascript">
+            prettyPrint()
+        </script>
+    </body>
+</html>
